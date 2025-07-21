@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GameHub by faaz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>GameHub BY FAAZ</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Info</a>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search games..." oninput="searchGames()" />
+  </header>
+
+  <div id="customAuth">
+    <h2>Login / Sign Up</h2>
+    <input type="text" id="customUsername" placeholder="Username" />
+    <input type="password" id="customPassword" placeholder="Password" />
+    <button onclick="customSignUp()">Sign Up</button>
+    <button onclick="customLogin()">Login</button>
+    <button onclick="customLogout()">Logout</button>
+  </div>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Your Game (Link Only)</h2>
+      <input type="text" id="gameTitle" placeholder="Game Title" />
+      <input type="text" id="gameDesc" placeholder="Game Description" />
+      <input type="text" id="gameLink" placeholder="Game Download Link" />
+      <button onclick="uploadGame()">Upload</button>
+    </section>
+
+    <section id="gamesSection">
+      <h2>All Games</h2>
+      <div id="gamesList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
